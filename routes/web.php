@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ROLECONTROLLER;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\FacbookController;
+use App\Http\Controllers\TestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -90,3 +91,5 @@ Route::post('changepassword', 'ChangePasswordController@store')->name('change.pa
 
 Route::get('facebook','FacebookController@redirectToFacebook');
 Route::get('facebook/callback','FacebookController@handleFacebookCallback');
+
+Route::get('test', 'TestController@index');
